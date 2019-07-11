@@ -143,5 +143,9 @@ It will ask
 ```
 
 # Launching cryosparc
-1. You might need to open the port
-<a ref=https://github.com/kckenneth/GCPsetup>Ref</a>
+1. You might need to open the port, <a href=https://github.com/kckenneth/GCPsetup>Ref</a> 
+2. `crysparcm restart` in terminal
+
+
+
+
