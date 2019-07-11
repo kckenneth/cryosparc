@@ -71,11 +71,9 @@ https://cloud.google.com/compute/docs/gpus/add-gpus
 # Enable persistence mode
 nvidia-smi -pm 1
 ```
-I run this but throw an error "superuser". So install line by line. 
-```
-sudo apt-get install dirmngr
-```
-After successful installation
+- I run this in bin/bash mode after creating the `my_install.sh` file and `chmod +x my_install.sh` but throws an error "superuser". So install line by line with `sudo` in front. 
+
+- After successful installation
 ```
 nvidia-smi
 
