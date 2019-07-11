@@ -99,7 +99,7 @@ CUDA version and driver
 
 <p align="center">
 <img src="img/cuda_driver.png" width="800"></p>
-<p align="center">Figure. CUDA driver and its version</p>
+<p align="center">Figure. CUDA version and its compatible GPU driver version</p>
 
 
 Run this code in `cryosparc2_master` with some ID hidden
