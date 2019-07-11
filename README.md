@@ -47,10 +47,10 @@ Follow the instructions
 lsb_release -a
 
 No LSB modules are available.
-Distributor ID: Debian
-Description:    Debian GNU/Linux 9.9 (stretch)
-Release:        9.9
-Codename:       stretch
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04.2 LTS
+Release:        18.04
+Codename:       bionic
 ```
 
 
@@ -75,4 +75,26 @@ I run this but throw an error "superuser". So install line by line.
 ```
 sudo apt-get install dirmngr
 ```
+After successful installation
+```
+nvidia-smi
+
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla P100-PCIE...  On   | 00000000:00:04.0 Off |                    0 |
+| N/A   33C    P0    26W / 250W |      0MiB / 16280MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+```
+
 
