@@ -120,7 +120,7 @@ It will ask
 
  Installation Settings:
    License ID              : xxxxx
-   Root Directory          : /home/kmllwin/cryosparc/cryosparc2_master
+   Root Directory          : /home/kchen/cryosparc/cryosparc2_master
    Master Hostname         : cryo.us-east1-b.c.w266-239815.internal
    Database Directory      : /home/kchen/cryosparc/cryosparc2_database
    Base HTTP Port Number   : 39000
@@ -143,6 +143,37 @@ It will ask
 # Launching cryosparc
 1. You might need to open the port, <a href=https://github.com/kckenneth/GCPsetup>Ref</a> 
 2. `crysparcm restart` in terminal
+3. You can also check the status by `cryosparcm status`, which will output the following: 
+
+```
+----------------------------------------------------------------------------
+CryoSPARC System master node installed at
+/home/user/cryosparc2/cryosparc2_master
+Current cryoSPARC version: v2.9.0
+----------------------------------------------------------------------------
+
+cryosparcm process status:
+
+command_core                     RUNNING   pid 7423, uptime 1:14:26
+command_proxy                    RUNNING   pid 7453, uptime 1:14:22
+command_vis                      RUNNING   pid 7442, uptime 1:14:24
+database                         RUNNING   pid 7346, uptime 1:14:29
+watchdog_dev                     STOPPED   Not started
+webapp                           RUNNING   pid 7458, uptime 1:14:20
+webapp_dev                       STOPPED   Not started
+
+----------------------------------------------------------------------------
+
+global config variables:
+
+export CRYOSPARC_LICENSE_ID="xxxx"
+export CRYOSPARC_MASTER_HOSTNAME="huxley"
+export CRYOSPARC_DB_PATH="/home/username/cryosparc2/cryosparc2_database"
+export CRYOSPARC_BASE_PORT=39000
+export CRYOSPARC_DEVELOP=false
+export CRYOSPARC_INSECURE=false
+```
+
 
 
 
