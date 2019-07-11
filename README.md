@@ -97,4 +97,41 @@ nvidia-smi
 +-----------------------------------------------------------------------------+
 ```
 
+Run this code in `cryosparc2_master` with some ID hidden
+```
+./install.sh    --standalone \
+                --license $LICENSE_ID \
+                --worker_path /home/kchen/cryosparc/cryosparc2_worker \
+                --cudapath /usr/local/cuda \
+                --ssdpath /home/kchen/cryosparc/scratch \
+                --initial_email "kenneth24chen@gmail.com" \
+                --initial_password <password> \
+                --initial_name "Kenneth Chen" \
+        
+```
+It will ask
+```
+************ CRYOSPARC SYSTEM: MASTER INSTALLER **************
+
+ Installation Settings:
+   License ID              : xxxxx
+   Root Directory          : /home/kmllwin/cryosparc/cryosparc2_master
+   Master Hostname         : cryo.us-east1-b.c.w266-239815.internal
+   Database Directory      : /home/kchen/cryosparc/cryosparc2_database
+   Base HTTP Port Number   : 39000
+   Developer Install       : false
+   Operating System        : Linux
+   Insecure Install        : false
+   Standalone Install      : true
+   Worker Root Directory   : /home/kchen/cryosparc/cryosparc2_worker
+   Initial User Email      : kenneth24chen@gmail.com
+   Initial User Password   : Cryosp1rc
+   Initial User Name       : Kenneth Chen
+   CUDA Path               : /usr/local/cuda
+   SSD                     : true
+   SSD Path                : /home/kchen/cryosparc/scratch
+   Version                 : v2.9.0
+
+******************************************************************
+```
 
