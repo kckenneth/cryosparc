@@ -29,8 +29,8 @@ RHEL 7.6 IBM Power LE	4.14.0	4.8.5	2.17	NO	18.x, 19.x	13.1.x, 16.1.x	8.0.0
 ```
 
 #### Note
-Installing CUDA in Debian will break the OS. 
-https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+Installing CUDA in Debian will break the OS.  
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html  
 https://devtalk.nvidia.com/default/topic/1047456/cuda-setup-and-installation/how-to-install-cuda-in-debian-9-stretch-/
 
 In GCP
