@@ -1,5 +1,38 @@
 # cryosparc
 
+1. Masternode (2CPU)
+2. Workernode (GPU must)
+3. CUDA (almost all Linux version except Debian)
+
+```
+Table 1. Native Linux Distribution Support in CUDA 10.1 Update 1
+Distribution	Kernel*	GCC	GLIBC	ICC	PGI	XLC	CLANG
+x86_64
+RHEL 7.6	3.10	4.8.5	2.17	19.0	18.x, 19.x	NO	8.0.0
+RHEL 6.10	2.6.32	4.4.7	2.12
+CentOS 7.6	3.10	4.8.5	2.17
+CentOS 6.10	2.6.32	4.4.7	2.12
+Fedora 29	4.16	8.0.1	2.27
+OpenSUSE Leap 15.0	4.15.0	7.3.1	2.26
+SLES 15.0	4.12.14	7.2.1	2.26
+SLES 12.4	4.12.14	4.8.5	2.22
+Ubuntu 18.10	4.18.0	8.2.0	2.28
+Ubuntu 18.04.2 (**)	4.15.0	7.3.0	2.27
+Ubuntu 16.04.6 (**)	4.4	5.4.0	2.23
+Ubuntu 14.04.6 (**)	3.13	4.8.4	2.19	—	—	—	—
+POWER8(***)
+RHEL 7.6	3.10	4.8.5	2.17	NO	18.x, 19.x	13.1.x, 16.1.x	8.0.0
+Ubuntu 18.04.1	4.15.0	7.3.0	2.27	NO	18.x, 19.x	13.1.x, 16.1.x	8.0.0
+POWER9(****)
+Ubuntu 18.04.1	4.15.0	7.3.0	2.27	NO	18.x, 19.x	13.1.x, 16.1.x	8.0.0
+RHEL 7.6 IBM Power LE	4.14.0	4.8.5	2.17	NO	18.x, 19.x	13.1.x, 16.1.x	8.0.0
+```
+
+#### Note
+Installing CUDA in Debian will break the OS. 
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+https://devtalk.nvidia.com/default/topic/1047456/cuda-setup-and-installation/how-to-install-cuda-in-debian-9-stretch-/
+
 In GCP
 1. IAM & Admin --> Quotas --> Metrics, select None, then search GPU (all regions) --> Location, select None, then select Global
 Compute Engine API GPUs (all region) 
